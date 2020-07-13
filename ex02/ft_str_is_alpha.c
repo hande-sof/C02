@@ -6,7 +6,7 @@
 /*   By: soilee <soilee@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/12 21:48:37 by soilee            #+#    #+#             */
-/*   Updated: 2020/07/12 21:55:06 by soilee           ###   ########.fr       */
+/*   Updated: 2020/07/13 15:45:39 by soilee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,12 @@ int	ft_str_is_alpha(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if ((str[i] >= 'a' && str[i] <= 'z') || 
-				(str[i] >= 'A' && str[i] <= 'Z'))
+		if (!(str[i] >= 'a' && str[i] <= 'z') && 
+				!(str[i] >= 'A' && str[i] <= 'Z'))
 		{
-			return 1;
-			break;
+			return 0;
 		}
 		i++;
 	}
-	return 0;
+	return 1;
 }
