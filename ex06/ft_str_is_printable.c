@@ -6,7 +6,7 @@
 /*   By: soilee <soilee@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 19:06:24 by soilee            #+#    #+#             */
-/*   Updated: 2020/07/14 12:54:07 by soilee           ###   ########.fr       */
+/*   Updated: 2020/07/14 15:43:36 by soilee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_str_is_printable(char *str)
 	{
 		if ((str[i] < 32) || (str[i] > 127))
 			return (0);
-		i++
+		i++;
 	}
 	return (1);
 }
